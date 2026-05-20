@@ -31,18 +31,6 @@ Climate Shift is a multi-page educational website about drastic climate changes.
 - Open-Meteo Forecast API
 - Google Fonts
 
-## How To Run
-
-Open `index.html` directly in a browser, or run the folder with a local server.
-
-If Node.js is installed, you can use:
-
-```bash
-npx serve .
-```
-
-Then open the local URL shown in the terminal.
-
 ## Weather API
 
 This project uses Open-Meteo public APIs:
