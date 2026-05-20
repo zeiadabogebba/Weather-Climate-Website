@@ -79,5 +79,3 @@ WebDevLevel2/
 ## Credits
 
 Weather data is provided by [Open-Meteo](https://open-meteo.com/).
-
-Images are loaded from [Unsplash](https://unsplash.com/).
