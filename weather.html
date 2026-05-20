@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Shift | Weather</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="weather">
+  <header class="site-header"></header>
+
+  <main>
+    <section class="page-hero weather-hero">
+      <div>
+        <p class="eyebrow">Live Weather</p>
+        <h1>Check current weather for any location.</h1>
+        <p>Search a city or region to see real-time conditions, wind, humidity, and a short forecast.</p>
+        <div class="hero-data" aria-label="Weather highlights">
+          <div><span>Source</span><strong>Open-Meteo</strong></div>
+          <div><span>Search</span><strong>Live cities</strong></div>
+          <div><span>Units</span><strong>C / F</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section weather-layout">
+      <form class="weather-search" id="weatherForm">
+        <label for="locationInput">Location</label>
+        <div class="search-row">
+          <div class="suggestion-field">
+            <input id="locationInput" type="search" name="location" placeholder="Example: Cairo, London, Tokyo" autocomplete="off" aria-autocomplete="list" aria-controls="locationSuggestions" required>
+            <div class="suggestions" id="locationSuggestions" role="listbox" aria-label="Location suggestions" hidden></div>
+          </div>
+          <button class="button primary" type="submit">Search</button>
+        </div>
+        <div class="unit-toggle" role="group" aria-label="Temperature unit">
+          <button type="button" class="unit-button active" data-unit="c">Celsius</button>
+          <button type="button" class="unit-button" data-unit="f">Fahrenheit</button>
+        </div>
+      </form>
+
+      <section class="weather-card" id="weatherCard" aria-live="polite">
+        <p class="weather-empty">Enter a location to load real-time weather data.</p>
+      </section>
+    </section>
+
+    <section class="section weather-note">
+      <h2>Weather and climate are connected, but not the same.</h2>
+      <p>Weather describes short-term conditions today. Climate describes long-term patterns over decades. Climate change shifts the background conditions that influence daily weather.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Weather data is provided by Open-Meteo public APIs.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
