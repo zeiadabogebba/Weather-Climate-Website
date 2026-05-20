@@ -24,8 +24,8 @@ Climate Shift is a multi-page educational website about drastic climate changes.
 
 ## Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Open-Meteo Geocoding API
 - Open-Meteo Forecast API
